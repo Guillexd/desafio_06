@@ -1,10 +1,99 @@
+@charset "UTF-8";
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: 'Lora', serif;
+  font-family: 'Open Sans', sans-serif;
   background: #8360c3;
   background: -webkit-linear-gradient(to right, #2ebf91, #8360c3);
   background: linear-gradient(to right, #2ebf91, #8360c3); }
+
+/*animación*/
+iframe,
+form {
+  animation-name: animar;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: .1s;
+  animation-iteration-count: 1; }
+
+@keyframes animar {
+  0% {
+    transform: translateY(-100px); }
+  100% {
+    transform: translateY(0px); } }
+
+/* MOBILE FIRST */
+/*HEADER DE LAS PÁGINAS*/
+/*transiciones*/
+header a:hover {
+  transform: scale(1.1);
+  transition: all .2s ease; }
+
+header img:hover {
+  transform: scale(1.2);
+  transition: all .3s ease; }
+
+/* FOOTER DE LAS PÁGINAS */
+.redondeo {
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%; }
+
+/*transiciones*/
+footer img:hover {
+  transform: scale(1.1);
+  transition: all .2s ease; }
+
+footer section ul .pie:hover {
+  transform: scale(1.2);
+  transition: all .3s ease; }
+
+@media screen and (min-width: 992px) {
+  footer #footersectionDos div div {
+    width: 70%; }
+    footer #footersectionDos div div p {
+      text-align: center; } }
+
+/* CONTENIDO PRINCIPAL DE INDEX.HTML */
+/* configurando slider */
+#imagenesSlider img {
+  height: 60vh; }
+
+#imagenesSlider h5 {
+  font-size: 2em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #81c7b2; }
+
+/* ajustando video, imágenes y h2 */
+#segundoSection h2 {
+  font-family: serif;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 5px;
+  color: #f12711; }
+
+#segundoSection iframe, #segundoSection p {
+  border-radius: 10%;
+  width: 100%; }
+
+@media screen and (min-width: 992px) {
+  #segundoSection p {
+    width: 45%; }
+  #segundoSection h2 {
+    font-family: serif;
+    font-size: 5em; } }
+
+/* ajustando imagen y texto */
+#tercerSection img {
+  width: 90%;
+  border-radius: 20%;
+  margin: auto;
+  height: 40vh; }
+
+@media screen and (min-width: 992px) {
+  #tercerSection img {
+    width: 45%; }
+  #tercerSection div {
+    width: 45%; } }
