@@ -1,0 +1,25 @@
+/* CONTENIDO PRINCIPAL INFORMACION.HTML */
+
+/* ajustando video e imágenes */
+#infomain {
+    h2{
+        font-family: serif;
+        font-size: 3em;
+        text-align: center;
+        margin-top: 5px;
+        color: #f12711;
+    }
+        @media screen and (min-width: $resolucion){
+            h2{
+                font-size: 5em;
+            }
+        }
+    iframe{
+        border-radius: 5%;
+        width: 100%;
+        height: 50vh;
+    }
+    img{
+        height: 40%;
+    }
+}
