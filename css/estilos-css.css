@@ -336,3 +336,125 @@ footer section ul .pie:hover {
     height: 100px; }
   #opimain #articleopi #botonopi {
     width: 500px; } }
+
+/* CONTENIDO PRINCIPAL CONTÁCTANOS.HTML */
+.fondoCont {
+  background-image: url("../imagen/tablero.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .fondoCont h2 {
+    font-family: serif;
+    font-size: 3em;
+    margin-top: 5px;
+    color: #f12711; }
+  .fondoCont .contForm {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #7f7f8fb7;
+    border-radius: 10%;
+    margin-bottom: 10px; }
+    .fondoCont .contForm .contDivUno {
+      padding-top: 20px;
+      width: 80vw;
+      display: flex;
+      flex-direction: column; }
+      .fondoCont .contForm .contDivUno input {
+        padding: 10px 30px;
+        font-size: 20px;
+        border-bottom-left-radius: 20%;
+        border-top-right-radius: 10%; }
+    .fondoCont .contForm .contDivDos {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px; }
+      .fondoCont .contForm .contDivDos #individual {
+        display: none; }
+        .fondoCont .contForm .contDivDos #individual:checked ~ .verde {
+          background-color: rgba(38, 198, 209, 0.726); }
+      .fondoCont .contForm .contDivDos .verde:hover {
+        background-color: #58bb2a80;
+        transform: scale(1.1);
+        transition: all .2s ease; }
+      .fondoCont .contForm .contDivDos .verde:active {
+        background-color: #58bb2a80; }
+      .fondoCont .contForm .contDivDos #matrimonial {
+        display: none; }
+        .fondoCont .contForm .contDivDos #matrimonial:checked ~ .rojo {
+          background-color: rgba(38, 198, 209, 0.726); }
+      .fondoCont .contForm .contDivDos .rojo:hover {
+        background-color: #bb2a3680;
+        transform: scale(1.1);
+        transition: all .2s ease; }
+      .fondoCont .contForm .contDivDos .rojo:active {
+        background-color: #bb2a3680; }
+      .fondoCont .contForm .contDivDos #doble {
+        display: none; }
+        .fondoCont .contForm .contDivDos #doble:checked ~ .azul {
+          background-color: rgba(38, 198, 209, 0.726); }
+      .fondoCont .contForm .contDivDos .azul:hover {
+        background-color: #992abb80;
+        transform: scale(1.1);
+        transition: all .2s ease; }
+      .fondoCont .contForm .contDivDos .azul:active {
+        background-color: #992abb80; }
+      .fondoCont .contForm .contDivDos #familiar {
+        display: none; }
+        .fondoCont .contForm .contDivDos #familiar:checked ~ .gris {
+          background-color: rgba(38, 198, 209, 0.726); }
+      .fondoCont .contForm .contDivDos .gris:hover {
+        background-color: #00000080;
+        transform: scale(1.1);
+        transition: all .2s ease; }
+      .fondoCont .contForm .contDivDos .gris:active {
+        background-color: #00000080; }
+      .fondoCont .contForm .contDivDos #compartida {
+        display: none; }
+        .fondoCont .contForm .contDivDos #compartida:checked ~ .amarillo {
+          background-color: rgba(38, 198, 209, 0.726); }
+      .fondoCont .contForm .contDivDos .amarillo:hover {
+        background-color: #5ce227b9;
+        transform: scale(1.1);
+        transition: all .2s ease; }
+      .fondoCont .contForm .contDivDos .amarillo:active {
+        background-color: #5ce227b9; }
+    .fondoCont .contForm .contDivTres {
+      display: flex;
+      justify-content: center; }
+      .fondoCont .contForm .contDivTres textarea {
+        font-size: 20px;
+        width: 80%;
+        height: 40vh;
+        border-radius: 5%;
+        padding: 20px; }
+  @media screen and (min-width: 992px) {
+    .fondoCont h2 {
+      font-size: 5em; }
+    .fondoCont .contForm {
+      width: 40vw; }
+      .fondoCont .contForm .contDivUno {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-evenly;
+        padding-top: 40px; }
+        .fondoCont .contForm .contDivUno .correo {
+          width: 86%; }
+        .fondoCont .contForm .contDivUno input {
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 0;
+          width: 40%;
+          padding: 15px; }
+      .fondoCont .contForm .contDivDos {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px; }
+        .fondoCont .contForm .contDivDos label {
+          font-size: 25px; }
+      .fondoCont .contForm .contDivTres textarea {
+        width: 95%;
+        height: 30vh; } }

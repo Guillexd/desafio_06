@@ -1,0 +1,212 @@
+/* CONTENIDO PRINCIPAL CONTÁCTANOS.HTML */
+.fondoCont {
+    background-image: url('../imagen/tablero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-family: serif;
+        font-size: 3em;
+        margin-top: 5px;
+        color: #f12711;
+    }
+
+    .contForm {
+        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #7f7f8fb7;
+        border-radius: 10%;
+        margin-bottom: 10px;
+
+        .contDivUno {
+            padding-top: 20px;
+            width: 80vw;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: 10px 30px;
+                font-size: 20px;
+                border-bottom-left-radius: 20%;
+                border-top-right-radius: 10%;
+            }
+        }
+
+        .contDivDos {
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+
+            #individual {
+                display: none;
+
+                &:checked~.verde{
+                    
+                            background-color: rgba(38, 198, 209, 0.726);
+                        
+                }
+            }
+
+            .verde {
+                &:hover{
+                    background-color: #58bb2a80;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active{
+                    background-color: #58bb2a80;
+                }
+            }
+            
+            #matrimonial {
+                display: none;
+
+                &:checked~.rojo {
+                
+                        background-color: rgba(38, 198, 209, 0.726);
+                
+                }
+            }
+
+            .rojo {
+                &:hover {
+                    background-color: #bb2a3680;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active {
+                    background-color: #bb2a3680;
+                }
+            }
+            
+            #doble {
+                display: none;
+
+                &:checked~.azul {
+                
+                        background-color: rgba(38, 198, 209, 0.726);
+                
+                }
+            }
+
+            .azul {
+                &:hover {
+                    background-color: #992abb80;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active {
+                    background-color: #992abb80;
+                }
+            }
+            
+            #familiar {
+                display: none;
+
+                &:checked~.gris {
+                
+                        background-color: rgba(38, 198, 209, 0.726);
+                
+                }
+            }
+
+            .gris {
+                &:hover {
+                    background-color: #00000080;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active {
+                    background-color: #00000080;
+                }
+            }
+            
+            #compartida {
+                display: none;
+
+                &:checked~.amarillo {
+                
+                        background-color: rgba(38, 198, 209, 0.726);
+                
+                }
+            }
+
+            .amarillo {
+                &:hover {
+                    background-color: #5ce227b9;
+                    transform: scale(1.1);
+                    transition: all .2s ease;
+                }
+                &:active {
+                    background-color: #5ce227b9;
+                }
+            }
+        } 
+
+        .contDivTres {
+            display: flex;
+            justify-content: center;
+
+            textarea {
+                font-size: 20px;
+                width: 80%;
+                height: 40vh;
+                border-radius: 5%;
+                padding: 20px;
+            }
+        }
+    }
+
+        @media screen and (min-width: $resolucion){
+            h2 {
+                font-size: 5em;
+            }
+            
+                .contForm {
+                    width: 40vw;
+            
+                    .contDivUno {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        width: 90%;
+                        justify-content: space-evenly;
+                        padding-top: 40px;
+
+                        .correo {
+                                width: 86%;
+                        }
+            
+                        input {
+                            border-bottom-left-radius: 0;
+                            border-top-right-radius: 0;
+                            width: 40%;
+                            padding: 15px;
+                        }
+                    }
+            
+                    .contDivDos {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 20px;
+            
+                        label{
+                            font-size: 25px;
+                        }
+                    }
+
+                    .contDivTres {
+                        textarea {
+                            width: 95%;
+                                height: 30vh;
+                        }
+                    }
+                }   
+        }
+}
+
+
