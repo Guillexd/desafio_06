@@ -1,0 +1,70 @@
+/* CONTENIDO PRINCIPAL PREGUNTAS.HTML */
+/* modificando h2 */
+#premain {
+    width: 80vw;
+
+        h2 {
+            font-family: serif;
+            font-size: 3em;
+            text-align: center;
+            margin-top: 5px;
+            color: #f12711;
+            }
+
+    #sectionpre {
+        display: flex;
+        flex-direction: column;
+
+        label {
+                background-color: rgba(102, 51, 153, 0.473);
+                width: 100%;
+                margin: auto;
+            }
+
+        input {
+            width: 100%;
+            margin: auto;
+        }
+
+        textarea {
+            padding: 5px 10px;
+            width: 100%;
+            height: 100px;
+            margin: auto;
+        }
+
+        #botonpre {
+            width: 100%;
+            margin: auto;
+        }
+    }
+
+        @media screen and (min-width: $resolucion){
+
+            width: 50vw;
+
+            h2{
+                font-size: 5em;
+            }
+
+            label {
+                background-color: rgba(102, 51, 153, 0.473);
+                width: 500px;
+            }
+
+            input {
+                width: 500px;
+            }
+
+            textarea {
+                padding: 20px;
+                width: 500px;
+                height: 100px;
+            }
+
+            #botonpre {
+                width: 500px;
+            }
+        }
+}
+

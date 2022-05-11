@@ -180,3 +180,48 @@ footer section ul .pie:hover {
         #nosmain aside img {
           margin: 0;
           height: 25vh; } }
+
+/* CONTENIDO PRINCIPAL PREGUNTAS.HTML */
+/* modificando h2 */
+#premain {
+  width: 80vw; }
+  #premain h2 {
+    font-family: serif;
+    font-size: 3em;
+    text-align: center;
+    margin-top: 5px;
+    color: #f12711; }
+  #premain #sectionpre {
+    display: flex;
+    flex-direction: column; }
+    #premain #sectionpre label {
+      background-color: rgba(102, 51, 153, 0.473);
+      width: 100%;
+      margin: auto; }
+    #premain #sectionpre input {
+      width: 100%;
+      margin: auto; }
+    #premain #sectionpre textarea {
+      padding: 5px 10px;
+      width: 100%;
+      height: 100px;
+      margin: auto; }
+    #premain #sectionpre #botonpre {
+      width: 100%;
+      margin: auto; }
+  @media screen and (min-width: 992px) {
+    #premain {
+      width: 50vw; }
+      #premain h2 {
+        font-size: 5em; }
+      #premain label {
+        background-color: rgba(102, 51, 153, 0.473);
+        width: 500px; }
+      #premain input {
+        width: 500px; }
+      #premain textarea {
+        padding: 20px;
+        width: 500px;
+        height: 100px; }
+      #premain #botonpre {
+        width: 500px; } }
