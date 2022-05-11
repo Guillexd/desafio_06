@@ -9,7 +9,7 @@
 
     h2 {
         font-family: serif;
-        font-size: 3em;
+        font-size: $mediaUno;
         margin-top: 5px;
         color: #f12711;
     }
@@ -164,7 +164,7 @@
 
         @media screen and (min-width: $resolucion){
             h2 {
-                font-size: 5em;
+                font-size: $medidaDos;
             }
             
                 .contForm {
