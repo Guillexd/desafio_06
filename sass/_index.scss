@@ -8,7 +8,7 @@
     }
 
     h5{
-        font-size: 2em;
+        font-size: $mediaUno;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: rgb(129, 199, 178);
     }
@@ -35,7 +35,7 @@
             }
             h2{
                 font-family: serif;
-                font-size: 5em;
+                font-size: $medidaDos;
             }
         }
 }

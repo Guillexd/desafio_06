@@ -5,7 +5,7 @@
 
         h2 {
             font-family: serif;
-            font-size: 3em;
+            font-size: $mediaUno;
             text-align: center;
             margin-top: 5px;
             color: #f12711;
@@ -44,7 +44,7 @@
             width: 50vw;
 
             h2{
-                font-size: 5em;
+                font-size: $medidaDos;
             }
 
             label {

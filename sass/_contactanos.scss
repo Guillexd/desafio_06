@@ -47,19 +47,19 @@
 
                 &:checked~.verde{
                     
-                            background-color: rgba(38, 198, 209, 0.726);
+                            background-color: $colorCheck;
                         
                 }
             }
 
             .verde {
                 &:hover{
-                    background-color: #58bb2a80;
+                    background-color: $colorUno;
                     transform: scale(1.1);
                     transition: all .2s ease;
                 }
                 &:active{
-                    background-color: #58bb2a80;
+                    background-color: $colorUno;
                 }
             }
             
@@ -68,19 +68,19 @@
 
                 &:checked~.rojo {
                 
-                        background-color: rgba(38, 198, 209, 0.726);
+                        background-color: $colorCheck;
                 
                 }
             }
 
             .rojo {
                 &:hover {
-                    background-color: #bb2a3680;
+                    background-color: $colorDos;
                     transform: scale(1.1);
                     transition: all .2s ease;
                 }
                 &:active {
-                    background-color: #bb2a3680;
+                    background-color: $colorDos;
                 }
             }
             
@@ -89,19 +89,19 @@
 
                 &:checked~.azul {
                 
-                        background-color: rgba(38, 198, 209, 0.726);
+                        background-color: $colorCheck;
                 
                 }
             }
 
             .azul {
                 &:hover {
-                    background-color: #992abb80;
+                    background-color: $colorTres;
                     transform: scale(1.1);
                     transition: all .2s ease;
                 }
                 &:active {
-                    background-color: #992abb80;
+                    background-color: $colorTres;
                 }
             }
             
@@ -110,19 +110,19 @@
 
                 &:checked~.gris {
                 
-                        background-color: rgba(38, 198, 209, 0.726);
+                        background-color: $colorCheck;
                 
                 }
             }
 
             .gris {
                 &:hover {
-                    background-color: #00000080;
+                    background-color: $colorCuatro;
                     transform: scale(1.1);
                     transition: all .2s ease;
                 }
                 &:active {
-                    background-color: #00000080;
+                    background-color: $colorCuatro;
                 }
             }
             
@@ -131,19 +131,19 @@
 
                 &:checked~.amarillo {
                 
-                        background-color: rgba(38, 198, 209, 0.726);
+                        background-color: $colorCheck;
                 
                 }
             }
 
             .amarillo {
                 &:hover {
-                    background-color: #5ce227b9;
+                    background-color: $colorCinco;
                     transform: scale(1.1);
                     transition: all .2s ease;
                 }
                 &:active {
-                    background-color: #5ce227b9;
+                    background-color: $colorCinco;
                 }
             }
         } 
