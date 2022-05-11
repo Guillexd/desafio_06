@@ -225,3 +225,114 @@ footer section ul .pie:hover {
         height: 100px; }
       #premain #botonpre {
         width: 500px; } }
+
+/* CONTENIDO PRINCIPAL OPINIONES.HTML */
+#opimain h2 {
+  font-family: serif;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 5px;
+  color: #f12711; }
+
+#opimain #mainopi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px; }
+  #opimain #mainopi .opiUno {
+    width: 100%;
+    height: 25vh; }
+    #opimain #mainopi .opiUno img {
+      width: 100%;
+      height: 100%;
+      border-radius: 3%; }
+  #opimain #mainopi .opiDos {
+    width: 100%;
+    height: 25vh; }
+    #opimain #mainopi .opiDos img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5%; }
+  #opimain #mainopi .imagenOpiUno {
+    grid-column: 1/-1; }
+  #opimain #mainopi .imagenOpiDos {
+    grid-column: 1/-1; }
+  #opimain #mainopi .imagenOpiTres {
+    grid-column: 1/-1; }
+  #opimain #mainopi .imagenOpiCinco {
+    grid-row: 7;
+    grid-column: 1/-1; }
+  #opimain #mainopi .animacionPrimera {
+    animation-name: animandoimagenes;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease; }
+  #opimain #mainopi .animacionSegunda {
+    animation-name: animandoimagenes2;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease; }
+
+@keyframes animandoimagenes {
+  0% {
+    transform: translateX(-100px); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes animandoimagenes2 {
+  0% {
+    transform: translateX(100px); }
+  100% {
+    transform: translateX(0); } }
+
+#opimain #articleopi {
+  display: flex;
+  flex-direction: column; }
+  #opimain #articleopi label {
+    background-color: rgba(102, 51, 153, 0.473);
+    width: 100%;
+    margin: auto; }
+  #opimain #articleopi input {
+    width: 100%;
+    margin: auto; }
+  #opimain #articleopi textarea {
+    padding: 5px 10px;
+    width: 100%;
+    height: 100px;
+    margin: auto; }
+  #opimain #articleopi #botonopi {
+    width: 100%;
+    margin: auto; }
+
+@media screen and (min-width: 992px) {
+  #opimain h2 {
+    font-size: 5em; }
+  #opimain #mainopi {
+    grid-template-columns: 1fr 1fr 1fr; }
+    #opimain #mainopi .opiDos {
+      width: 100%;
+      height: 25vh; }
+      #opimain #mainopi .opiDos img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5%; }
+    #opimain #mainopi .imagenOpiUno {
+      grid-column: 1/3; }
+    #opimain #mainopi .imagenOpiDos {
+      grid-column: 2/4; }
+    #opimain #mainopi .imagenOpiTres {
+      grid-column: 1/3; }
+    #opimain #mainopi .imagenOpiCuatro {
+      grid-column: 3;
+      grid-row: 3; }
+    #opimain #mainopi .imagenOpiCinco {
+      grid-column: 2/4; }
+  #opimain #articleopi label {
+    width: 500px; }
+  #opimain #articleopi input {
+    width: 500px; }
+  #opimain #articleopi textarea {
+    padding: 20px;
+    width: 500px;
+    height: 100px; }
+  #opimain #articleopi #botonopi {
+    width: 500px; } }

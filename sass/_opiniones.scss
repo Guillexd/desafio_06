@@ -1,0 +1,183 @@
+/* CONTENIDO PRINCIPAL OPINIONES.HTML */
+
+#opimain {
+    h2{
+        font-family: serif;
+        font-size: 3em;
+        text-align: center;
+        margin-top: 5px;
+        color: #f12711;
+    }
+    #mainopi {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        .opiUno {
+            width: 100%;
+            height: 25vh;
+
+            img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 3%;
+                }
+            }
+
+        .opiDos {
+            width: 100%;
+            height: 25vh;
+
+            img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5%;
+                }
+        }
+
+        .imagenOpiUno {
+            grid-column: 1/-1;
+        }
+
+        .imagenOpiDos {
+            grid-column: 1/-1;
+        }
+
+        .imagenOpiTres {
+            grid-column: 1/-1;
+        }
+
+        .imagenOpiCinco {
+            grid-row: 7;
+            grid-column: 1/-1;
+        }
+
+        // animación
+
+        .animacionPrimera {
+            animation-name: animandoimagenes;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+
+        .animacionSegunda {
+            animation-name: animandoimagenes2;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            animation-timing-function: ease;
+        }
+
+            @keyframes animandoimagenes {
+                0% {
+                    transform: translateX(-100px);
+                }
+
+                100% {
+                    transform: translateX(0);
+                }
+            }
+
+            @keyframes animandoimagenes2 {
+                0% {
+                    transform: translateX(100px);
+                }
+
+                100% {
+                    transform: translateX(0);
+                }
+            }
+    }
+
+    #articleopi {
+        display: flex;
+        flex-direction: column;
+        label {
+                background-color: rgba(102, 51, 153, 0.473);
+                width: 100%;
+                margin: auto;
+        }
+
+        input {
+            width: 100%;
+            margin: auto;
+        }
+
+        textarea {
+            padding: 5px 10px;
+            width: 100%;
+            height: 100px;
+            margin: auto;
+        }
+
+        #botonopi {
+            width: 100%;
+            margin: auto;
+        }
+
+    }
+
+    @media screen and (min-width: $resolucion) {
+
+        h2 {
+            font-size: 5em;
+        }
+
+        #mainopi {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .opiDos {
+                width: 100%;
+                height: 25vh;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 5%;
+                }
+            }
+
+            .imagenOpiUno {
+                grid-column: 1/3;
+            }
+
+            .imagenOpiDos {
+                grid-column: 2/4;
+            }
+
+            .imagenOpiTres {
+                grid-column: 1/3;
+            }
+
+            .imagenOpiCuatro {
+                grid-column: 3;
+                grid-row: 3;
+            }
+
+            .imagenOpiCinco {
+                grid-column: 2/4;
+            }
+
+        }
+
+        #articleopi {
+
+            label {
+                width: 500px;
+            }
+
+            input {
+                width: 500px;
+            }
+
+            textarea {
+                padding: 20px;
+                width: 500px;
+                height: 100px;
+            }
+
+            #botonopi {
+                width: 500px;
+            }
+        }
+    }   
+}
